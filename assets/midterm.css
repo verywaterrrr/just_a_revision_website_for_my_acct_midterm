@@ -1,0 +1,29 @@
+html { scroll-behavior: smooth; }
+body { background: #f4f3ef; }
+main { width: min(940px, calc(100% - 32px)); box-shadow: none; border: 1px solid #dddcd5; }
+.eyebrow { color: #60695d; font-size: .8rem; text-transform: uppercase; letter-spacing: .12em; font-weight: 700; }
+h1 { font-family: Georgia, 'Times New Roman', serif; font-weight: 500; color: #233c35; max-width: 19ch; }
+h2, h3, summary { color: #233c35; }
+.intro { font-size: 1.15rem; }
+nav { display: flex; gap: 12px 22px; flex-wrap: wrap; font-size: .95rem; margin-bottom: 32px; }
+nav a, .source a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.source { font-size: .87rem; color: #5d6875; padding: 14px 0; border-top: 1px solid var(--line); }
+.equation { background: #edf3ed; color: #233c35; font-size: 1.12rem; overflow-wrap: anywhere; }
+.worked { padding: 18px 22px; background: #f5f7f4; border-left: 3px solid #607e67; margin: 24px 0; }
+.trap { padding: 14px 18px; border-left: 3px solid #b68336; background: #fff8e9; }
+pre { white-space: pre; overflow-x: auto; font: .92rem/1.75 ui-monospace, SFMono-Regular, Menlo, monospace; background: #f1f3f3; padding: 18px; border-radius: 4px; }
+pre code { background: transparent; padding: 0; }
+.question { margin: 30px 0; padding-top: 18px; border-top: 1px solid #d9e1e8; }
+.question h3 { font-size: 1.06rem; margin-top: 0; }
+label { font-size: .9rem; color: #5d6875; }
+textarea { display: block; width: 100%; min-height: 100px; border: 1px solid #a8b5ad; padding: 12px; border-radius: 5px; background: #fff; font: inherit; resize: vertical; margin: 6px 0 12px; }
+.course-list { list-style: none; padding: 0; }
+.course-list li { border-top: 1px solid #d9e1e8; padding: 18px 0; max-width: none; }
+.course-list a { font-size: 1.15rem; font-weight: 650; }
+.course-list small { display: block; margin-top: 5px; color: #5d6875; }
+.finish { margin-top: 42px; padding: 22px; background: #edf3ed; }
+.finish p { margin: 8px 0; }
+a:focus-visible, summary:focus-visible, textarea:focus-visible { outline: 3px solid #b68336; outline-offset: 4px; }
+details { border-radius: 4px; }
+@media (max-width:650px) { main { width: 100%; border: 0; } pre { font-size: .8rem; padding: 12px; } .worked { padding: 14px; } }
+@media print { nav, textarea, label { display:none; } main { border:0; } details { break-inside:avoid; } }
